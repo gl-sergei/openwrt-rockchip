@@ -68,7 +68,7 @@ jobs:
           df -h
       - name: Install OpenWrt source
         run: |
-          git clone -b openwrt-21.02 --single-branch https://git.openwrt.org/openwrt/openwrt.git openwrt
+          git clone --depth 1 --branch v21.02.1 https://git.openwrt.org/openwrt/openwrt.git openwrt
       - name: Prepare openwrt
         run: |
           cd openwrt
