@@ -30,9 +30,9 @@ patch -p1 < ../patches/0008-mbedtls-Implements-AES-and-GCM-with-ARMv8-Crypto-Ext
 patch -p1 < ../patches/0009-rockchip-add-support-for-OrangePi-R1-Plus.patch
 
 #dnsmasq aaaa filter
-patch -p1 < ../patches/1001-dnsmasq-add-filter-aaaa-option.patch
-cp -f ../patches/910-mini-ttl.patch package/network/services/dnsmasq/patches/
-cp -f ../patches/911-dnsmasq-filter-aaaa.patch package/network/services/dnsmasq/patches/
+#patch -p1 < ../patches/1001-dnsmasq-add-filter-aaaa-option.patch
+#cp -f ../patches/910-mini-ttl.patch package/network/services/dnsmasq/patches/
+#cp -f ../patches/911-dnsmasq-filter-aaaa.patch package/network/services/dnsmasq/patches/
 
 #test 8152 patch
 cp -f ../patches/993-board-nanopi-r2s-r8152-customise-leds.patch target/linux/rockchip/patches-5.4/
