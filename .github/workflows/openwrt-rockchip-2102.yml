@@ -176,7 +176,7 @@ jobs:
           tag: 2102
           commit: 21.02
           replacesArtifacts: true
-          token: ${{ secrets.RELEASES_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           bodyFile: "body-origin-21.02.md"
           artifacts: ./artifact/*.zip,./artifact/*.config
 
